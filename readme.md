@@ -1,4 +1,4 @@
-# Educational Hand Tracking Mouse
+# Educational OpenCV-Gesture-Control (Hand Tracking Mouse)
 
 This project is a reference implementation for a hand-tracking virtual mouse, designed for educational purposes. It demonstrates a clean architecture, robust gesture recognition, and clear configuration, making it an ideal starting point for anyone interested in computer vision and human-computer interaction.
 
@@ -22,8 +22,7 @@ The required Python libraries are listed in `requirements.txt`.
 
 1.  **Clone the repository:**
     ```bash
-    git clone <the-repo-url>
-    cd hand_tracking_mouse
+    git clone https://github.com/Brauxo/OpenCV-Gesture-Control
     ```
 
 2.  **Create a virtual environment (recommended):**

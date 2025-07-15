@@ -49,25 +49,21 @@ class AppConfig:
     FRAME_PADDING = 100
 
     #=================================
-    # Gesture Recognition
+    # Gesture Recognition and Definition
     #=================================
     # Pinch Thresholds (distance in pixels)
     LEFT_CLICK_THRESH = 30
     RIGHT_CLICK_THRESH = 35
+
     # Timing (in seconds)
     CLICK_COOLDOWN = 0.4
     DRAG_START_TIME = 0.15 # Hold pinch this long to start a drag
 
-    #=================================
-    # Gesture Definitions
-    #=================================
     # Fist: All finger tips must be closer than this to the palm center
     FIST_THRESH = 65
+    
     # Peace Sign: Distance between index and middle tips for scroll mode
     PEACE_SIGN_THRESH = 30
-    # Volume Control: Distance between thumb and pinky
-    VOL_MIN_DIST = 20
-    VOL_MAX_DIST = 150
 
     #=================================
     # Visual Feedback
