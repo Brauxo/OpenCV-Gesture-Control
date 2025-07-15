@@ -47,6 +47,7 @@ class GestureManager:
             return "inactive", None
         if self._is_peace_sign(hand_landmarks):
             return "scroll", None
+        return "navigate", None
 
     def get_action(self, hand_landmarks):
         """Recognizes dynamic actions like clicks and drags."""
