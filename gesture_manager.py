@@ -47,12 +47,6 @@ class GestureManager:
             return "inactive", None
         if self._is_peace_sign(hand_landmarks):
             return "scroll", None
-        if self._is_shaka_sign(hand_landmarks):
-            # Calculate volume level
-            vol_dist = self._distance(hand_landmarks[Landmark.THUMB_TIP], hand_landmarks[Landmark.PINKY_TIP])
-            volume_level = np.interp(vol_dist, [self.cfg.VOL_MIN_DIST, self.cfg.VOL_MAX_DIST], [0.0, 1.0])
-            return "volume", np.clip(volume_level, 0.0, 1.0)
-        return "navigate", None
 
     def get_action(self, hand_landmarks):
         """Recognizes dynamic actions like clicks and drags."""
